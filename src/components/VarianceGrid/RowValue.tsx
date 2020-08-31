@@ -22,7 +22,7 @@ const RowValue: React.FC<Props> = ({ index }) => {
       type="number"
       value={value}
       onChange={e => handleChange(e.target.valueAsNumber)}
-      style={{gridRow: index+2, gridColumn: 1}}
+      style={{gridRow: index+3, gridColumn: 2}}
       name={name}
       id={name}
       min={0}

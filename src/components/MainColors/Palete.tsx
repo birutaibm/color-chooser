@@ -8,18 +8,18 @@ const Palete: React.FC = () => {
   const color = useSelector<IState, IColorState>(state => state.color);
 
   return (
-    <svg width="50" height="50">
+    <svg width="100" height="100">
       <rect
         fill={color.background.toHexa()}
-        width="35"
-        height="35"
-        x="15"
-        y="15"
+        width="70"
+        height="70"
+        x="30"
+        y="30"
       />
       <rect
         fill={color.foreground.toHexa()}
-        width="35"
-        height="35"
+        width="70"
+        height="70"
         x="0"
         y="0"
       />

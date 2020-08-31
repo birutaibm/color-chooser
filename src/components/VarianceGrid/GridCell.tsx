@@ -22,8 +22,8 @@ const GridCell: React.FC<Props> = ({ rowIndex, columnIndex }) => {
     <GridContentCell
       background={background}
       foreground={foreground}
-      row={rowIndex + 2}
-      column={columnIndex + 2}
+      row={rowIndex + 3}
+      column={columnIndex + 3}
     >
       Oi
       <div className="tooltiptext">

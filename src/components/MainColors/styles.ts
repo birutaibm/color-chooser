@@ -6,6 +6,9 @@ export const Container = styled.div`
 
 export const SelectorsGrid = styled.div`
   display: grid;
+  align-items: center;
+  grid-gap: 5px;
+  margin: auto 10px;
 
   #fg-hue {
     grid-column: 2;
@@ -42,12 +45,16 @@ interface LabelProps {
   position: number;
 }
 
-export const RowLabel = styled.span<LabelProps>`
+const BaseLabel = styled.span`
+  font-size: 20px;
   grid-column: 1;
+  grid-row: 1;
+`;
+
+export const RowLabel = styled(BaseLabel)<LabelProps>`
   grid-row: ${({position}) => position + 1};
 `;
 
-export const ColumnLabel = styled.span<LabelProps>`
+export const ColumnLabel = styled(BaseLabel)<LabelProps>`
   grid-column: ${({position}) => position + 1};
-  grid-row: 1;
 `;
